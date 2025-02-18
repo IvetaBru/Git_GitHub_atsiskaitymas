@@ -98,7 +98,7 @@ body{
     top: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(43, 44, 49, 0.842);
     color: white;
     z-index: 2;
     padding: 50px;
@@ -129,7 +129,7 @@ body{
 #closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4{
     position: absolute;
     top: 40px;
-    right: 20px;
+    right: 50px;
     height: 40px;
 }
 
@@ -161,4 +161,11 @@ body{
             text-align: center;
         }
     }
+
+    #tab1, #tab2, #tab3, #tab4{
+        top: 50px;
+        left: 200px;
+        right: 200px;
+    }
+    
 }
