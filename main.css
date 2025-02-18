@@ -2,11 +2,11 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     
-    background-image: url('./resources/bg-overlay.png'), url('./resources/bg.jpg');
-    background-size: cover, cover;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./resources/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
     margin: 0;
     padding: 0 10px;
 }
@@ -77,8 +77,10 @@ body{
         border: 1px solid white;
         padding: 20px;
         letter-spacing: 2px;
-
-
+    }
+    >button:hover{
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.377);
     }
     >button:first-child{
         border-top-left-radius: 2px;
@@ -87,5 +89,32 @@ body{
     >button:last-child{
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
+    }
+}
+
+@media (min-width: 769px){
+    body{
+        padding: 0 50px;
+    }
+    #btnContainer{
+        flex-direction: row;
+        justify-content: center;
+
+        >button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+        }
+    }
+
+    #hero{
+        >h1{
+            font-size: 50px;
+        }
+        >p{
+            text-align: center;
+        }
     }
 }
