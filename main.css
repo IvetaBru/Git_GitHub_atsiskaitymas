@@ -117,7 +117,7 @@ body{
 
     }
 
-    > img{
+    > img, video{
         max-width: 100%;
         max-height: 300px;
         width: 100%;
@@ -126,14 +126,23 @@ body{
     }
 }
 
-#closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4{
+#closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4 {
     position: absolute;
     top: 40px;
     right: 50px;
     height: 40px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 }
 
+#closeBtn1:hover, #closeBtn2:hover, #closeBtn3:hover, #closeBtn4:hover {
 
+    transform: rotate(90deg);
+}
+
+.content.hidden{
+    visibility: hidden;
+}
 
 
 @media (min-width: 769px){
