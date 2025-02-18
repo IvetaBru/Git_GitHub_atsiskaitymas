@@ -92,6 +92,50 @@ body{
     }
 }
 
+#tab1, #tab2, #tab3, #tab4{
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    z-index: 2;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.tabInfo{
+    text-align: left;
+    line-height: 30px;
+
+    >h2{
+        text-decoration: underline 1px;
+        text-underline-offset: 20px;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+
+    }
+
+    > img{
+        max-width: 100%;
+        max-height: 300px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+#closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    height: 40px;
+}
+
+
+
+
 @media (min-width: 769px){
     body{
         padding: 0 50px;
