@@ -6,7 +6,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 85vh;
     margin: 0;
     padding: 0 10px;
 }
@@ -21,7 +21,7 @@ body{
 .line{
     border-bottom: 1px solid white;
     margin: 0;
-    margin-top: 200px;
+    margin-top: 180px;
     text-align: center;
 }
 .line2{
@@ -136,7 +136,6 @@ body{
 }
 
 #closeBtn1:hover, #closeBtn2:hover, #closeBtn3:hover, #closeBtn4:hover {
-
     transform: rotate(90deg);
 }
 
@@ -170,11 +169,13 @@ body{
             text-align: center;
         }
     }
+  
+}
 
+@media (min-width: 1024px){
     #tab1, #tab2, #tab3, #tab4{
         top: 50px;
         left: 200px;
         right: 200px;
     }
-    
 }
